@@ -1,28 +1,20 @@
-import React from 'react';
-
+import React from "react";
 
 const Header = props => (
-
-    <header className="top">
-        <h1>Catch
-            <span className="ofThe">
-            <span className="of">
-             of 
-             </span>
-             <span className="the">
-             the
-             </span>
-             </span>
-             Day
-             </h1>
-        <h3 className="tagline">
-        <span>{props.tagline}</span> 
-        </h3>
-         </header>
-)
-
-
-
+  <header className="top">
+    <h1>
+      Catch
+      <span className="ofThe">
+        <span className="of">of</span>
+        <span className="the">the</span>
+      </span>
+      Day
+    </h1>
+    <h3 className="tagline">
+      <span>{props.tagline}</span>
+    </h3>
+  </header>
+);
 
 // class Header extends React.Component {
 
@@ -33,7 +25,7 @@ const Header = props => (
 //         <h1>Catch
 //             <span className="ofThe">
 //             <span className="of">
-//              of 
+//              of
 //              </span>
 //              <span className="the">
 //              the
@@ -42,7 +34,7 @@ const Header = props => (
 //              Day
 //              </h1>
 //         <h3 className="tagline">
-//         <span>{this.props.tagline}</span> 
+//         <span>{this.props.tagline}</span>
 //         </h3>
 //          </header>
 

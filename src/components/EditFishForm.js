@@ -2,14 +2,14 @@ import React from "react";
 
 class EditFishForm extends React.Component {
   handleChange = event => {
-      console.log(event.currentTarget.value);
-      const updatedFish = {
-          ...this.props.fish,
-          [event.currentTarget.name]: event.currentTarget.value
-      }
-      this.props.updateFish(this.props.index, updatedFish)
-  }
-    render() {
+    console.log(event.currentTarget.value);
+    const updatedFish = {
+      ...this.props.fish,
+      [event.currentTarget.name]: event.currentTarget.value
+    };
+    this.props.updateFish(this.props.index, updatedFish);
+  };
+  render() {
     return (
       <div className="fish-edit">
         <input
@@ -43,6 +43,7 @@ class EditFishForm extends React.Component {
           name="image"
           value={this.props.fish.image}
         />
+        <button onClick={() => this.props.deleteFish(this.props.index)} >Remove Fish</button>
       </div>
     );
   }
